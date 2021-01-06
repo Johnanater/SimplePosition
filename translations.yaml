@@ -1,0 +1,8 @@
+# SimplePosition Translations
+# By Johnanater
+# https://johnanater.com
+
+position_message: "{Prefix} {Position}"
+
+their_prefix: "{Username}'s position: "
+your_prefix: "Your position: "

@@ -1,0 +1,15 @@
+# SimplePosition Config
+# By Johnanater
+# https://johnanater.com
+
+# Chat
+ChatConfig:
+  # Icon for the chat messages sent
+  MessageIconUrl: "https://i.imgur.com/594OHv1.png"
+  UseRichText: false
+
+  # These chat colors are from Unity
+  # You can find out how to specify colors here:
+  # https://docs.unity3d.com/ScriptReference/ColorUtility.TryParseHtmlString.html
+  MessageColor: "#00FF00"
+ 

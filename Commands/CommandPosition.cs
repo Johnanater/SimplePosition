@@ -1,6 +1,7 @@
 using System;
 using Cysharp.Threading.Tasks;
 using Microsoft.Extensions.Localization;
+using OpenMod.API.Permissions;
 using OpenMod.Core.Commands;
 using OpenMod.Unturned.Commands;
 using OpenMod.Unturned.Users;
@@ -31,7 +32,7 @@ namespace SimplePosition.Commands
             var untUser = (UnturnedUser) Context.Actor;
             Player targetPlayer = null;
             
-            if (Context.Parameters.TryGet<string>(0, out var targetName))
+            if (Context.Parameters.TryGet<string>(0, out var targetName) && await CheckPermissionAsync("SimplePosition:commands.position.other") == PermissionGrantResult.Grant)
                 targetPlayer = PlayerTool.getPlayer(targetName);
 
             var pos = targetPlayer != null

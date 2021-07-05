@@ -13,7 +13,7 @@ using SDG.Unturned;
 using SimplePosition.Models;
 using UnityEngine;
 
-[assembly: PluginMetadata("SimplePosition", DisplayName = "SimplePosition")]
+[assembly: PluginMetadata("SimplePosition", DisplayName = "SimplePosition", Author = "Johnanater", Website = "https://johnanater.com")]
 namespace SimplePosition
 {
     public class SimplePosition : OpenModUnturnedPlugin
